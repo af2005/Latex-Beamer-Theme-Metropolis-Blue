@@ -1,0 +1,34 @@
+\newenvironment{infobox}[1]{\begin{tcolorbox}[colback=mDarkTeal!10!white,
+colframe=mDarkTeal,
+                     title=\textsc{#1},  
+                     center, 
+                     valign=top, 
+                     halign=left,
+                     before skip=0.8cm, 
+                     after skip=1.2cm,
+                     center title, 
+                     outer arc=0mm,
+                     boxrule=0.2pt,
+                     width=\textwidth]
+}{}
+
+\newenvironment{highlightbox}[2]{
+	\begin{tcolorbox}[
+		colback=#1!10!white,
+		colframe=#1,  
+		valign=center, 
+        halign=left,
+        before skip=0.3cm, 
+        after skip=0.5cm,
+        center title, 
+        arc=0mm,
+		boxrule=0.2pt,
+        leftrule=3mm,
+        width=#2\textwidth]
+       \small
+}{\normalsize\end{tcolorbox}}
+
+\newenvironment{tagbox}{\begin{tcolorbox}[colback=mLightBrown!10!white,
+colframe=mLightBrown,  size=fbox]
+}{\end{tcolorbox}}
+
